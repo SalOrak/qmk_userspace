@@ -55,13 +55,13 @@ enum keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX, KC_Q, KC_W, KC_E, KC_R,  KC_T,                                     KC_Y,     KC_U,    KC_I,    KC_O,    KC_P, XXXXXXX,
+      KC_LALT, KC_Q, KC_W, KC_E, KC_R,  KC_T,                                     KC_Y,     KC_U,    KC_I,    KC_O,    KC_P, KC_LALT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     KC_ESC,  KC_A ,   KC_S ,   KC_D ,   KC_F , KC_G,                           KC_H,     KC_J ,    KC_K ,     KC_L ,  KC_SEMICOLON,   KC_ESC,
+     LCTL_T(KC_ESC),  KC_A ,   KC_S ,   KC_D ,   KC_F , KC_G,                    KC_H,     KC_J ,  KC_K , KC_L ,  KC_SEMICOLON,  LCTL_T(KC_ESC),
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXXXXX, KC_Z,  KC_X,  KC_C,    KC_V, KC_B,                           KC_N,    KC_M,    KC_COMMA,    KC_DOT,     KC_QUOTE,  XXXXXXX,
  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-					                        XXXXXXX, MO(1), KC_SPC,    KC_LSFT, MO(2), XXXXXXX
+					                        KC_LALT, MO(1), KC_SPC,    KC_LSFT, MO(2), KC_LALT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -70,11 +70,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        XXXXXXX, KC_GRV, KC_LBRC, KC_LCBR, KC_LPRN, KC_PLUS,                     KC_MINUS, KC_RPRN, KC_RCBR, KC_RBRC, KC_ESC,    XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-       KC_ESC,  OS_CMD,  OS_ALT,  OS_SHFT,  OS_CTRL, KC_ENT,                    KC_BSPC, KC_DLR, KC_HASH,  KC_EQL, KC_PERC,  KC_ESC,
+       LCTL_T(KC_ESC),  OS_CMD,  OS_ALT,  OS_SHFT,  OS_CTRL, KC_ENT,             KC_BSPC, KC_DLR, KC_HASH,  KC_EQL, KC_PERC,  LCTL_T(KC_ESC),
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        XXXXXXX, KC_TILD,  KC_AT,  KC_BACKSLASH, KC_EXLM,  KC_SLASH,              KC_CIRC, KC_AMPR, KC_ASTR, KC_UNDS, KC_QUES,  XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-					                    XXXXXXX, _______, KC_SPC,       KC_TAB, MO(3), XXXXXXX
+					                    KC_LALT, _______, KC_SPC,       KC_TAB, MO(3), KC_LALT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,---------------------------------------------------.                    ,-----------------------------------------------------.
     XXXXXXX,  KC_1,    KC_2,     KC_3,    KC_4,    KC_5,                       LSFT(KC_QUOTE), C(KC_Q), C(KC_C), C(KC_L), KC_ESC, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    KC_ESC,  KC_6,    KC_7,     KC_8,    KC_9,    KC_0,                        KC_BSPC,  OS_CTRL , OS_SHFT, OS_ALT, OS_CMD, KC_ESC,
+    KC_ESC,  KC_6,    KC_7,     KC_8,    KC_9,    KC_0,                        KC_DEL,  OS_CTRL , OS_SHFT, OS_ALT, OS_CMD, KC_ESC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, KC_TILD,  KC_AT,  KC_BACKSLASH, KC_EXLM,  KC_SLASH,              KC_CIRC, KC_AMPR, KC_ASTR, KC_UNDS, KC_QUES,  XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
