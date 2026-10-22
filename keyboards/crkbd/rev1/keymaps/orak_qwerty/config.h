@@ -29,3 +29,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MASTER_LEFT
 
 #define NO_MUSIC_MODE
+
+#define LAYER_LOCK_IDLE_TIMEOUT 60*60*1000

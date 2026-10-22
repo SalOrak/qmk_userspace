@@ -4,6 +4,7 @@
 MOUSEKEY_ENABLE = yes    # Mouse keys
 RGBLIGHT_ENABLE = no # Enable WS2812 RGB underlight.
 # RGB_MATRIX_ENABLE = no
+LAYER_LOCK_ENABLE = yes # Gaming layer lock
 OLED_ENABLE     = no
 LTO_ENABLE      = yes
 CONVERT_TO      = elite_pi
